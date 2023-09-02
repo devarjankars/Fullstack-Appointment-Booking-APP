@@ -5,8 +5,10 @@ async function getAllUsers() {
     const peopleList = document.getElementById("peopleList");
     const res = await axios.get("http://localhost:3000/get/users");
     // console.log(res);
-    .then((user)=>{
+    console.log(res)-
       res.data.forEach((user) => {
+
+        const li 
       const li = document.createElement("li");
       li.className =
         "list-group-item list-group-item-action list-group-item-dark w-75 m-2";
@@ -26,7 +28,9 @@ async function getAllUsers() {
       li.appendChild(deleteButton);
       peopleList.appendChild(li);
     });
-  })
+  
+
+
   } catch (err) {
     console.log(err);
   }

@@ -26,7 +26,7 @@ exports.addUser = (req, res, next) => {
   })
     .then((result) => {
       console.log("Added to User");
-      res.redirect("/get/users");
+      res.redirect("/get");
     })
     .catch((err) => {
       console.log(err);
